@@ -1,0 +1,36 @@
+<!-- <h3>Cart</h3>
+
+<p>
+    <a routerLink="/shipping">Shipping Prices</a>
+</p>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="login()">
+
+    <div>
+        <label for="name">
+            Name
+        </label>
+        <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div>
+        <label for="address">
+            Address
+        </label>
+        <input id="address" type="text" formControlName="address">
+    </div>
+
+    <button class="button" type="submit">Purchase</button>
+
+</form> -->
+
+<div class="container">
+    <div class="row justify-content-center">
+      <form class="p-4" (ngSubmit)="login()">
+        <input type="text" [(ngModel)]="user" name="user" class="form-control" placeholder="Username" autofocus=""
+          autocomplete="off" required>
+        <br />
+        <button [disabled]="user.trim().length === 0" class="btn btn-primary btn-sm btn-block">Ingresar</button>
+      </form>
+    </div>
+  </div>

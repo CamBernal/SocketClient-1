@@ -1,0 +1,6 @@
+<footer class="p-2 bg-dark text-white text-center">
+    Server Satatus: 
+    <span *ngIf="socketServer.statusServer" class="text-success">OnLine</span>
+    <span *ngIf="!socketServer.statusServer" class="text-info">OffLine</span>
+</footer>
+
